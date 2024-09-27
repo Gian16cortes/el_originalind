@@ -1,0 +1,326 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background: linear-gradient(90deg, #f3f4f6 0%, #ffffff 100%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.brand-name {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    color: #555;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s;
+}
+
+.navbar-right a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.navbar-right a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar-right a:hover {
+    color: #031529;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(45deg, #007bff, #adafb1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid transparent;
+}
+
+.login-button:hover {
+    background: linear-gradient(45deg, #0056b3, #003d7a);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.logo_sesion {
+    height: 24px; /* Reducido de 24px a 16px */
+    margin-right: 8px; /* Opcional: ajustar el margen si es necesario */
+}
+
+
+/* New Styles for Welcome Section */
+.welcome-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-content {
+    max-width: 50%;
+}
+
+.text-content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.text-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.btn-conoce-mas {
+    display: inline-block;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-conoce-mas:hover {
+    background: linear-gradient(45deg, #0056b3, #003d7a);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.image-content {
+    max-width: 80%;
+}
+
+.welcome-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.footer {
+    background: #1a1a1a; /* Fondo oscuro */
+    color: #fff;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Línea superior sutil */
+}
+
+.footer .footer-section {
+    flex: 1;
+    margin: 0 20px;
+    min-width: 250px; /* Ancho mínimo para las secciones */
+}
+
+.footer h4 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #007bff; /* Línea inferior destacada */
+}
+
+.footer h6 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    margin: 0 0 10px;
+}
+
+.footer p i {
+    margin-right: 10px;
+}
+
+.footer .btn-outline-light {
+    border: 1px solid #007bff;
+    color: #007bff;
+    font-size: 16px;
+    padding: 8px 16px;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+}
+
+.footer .btn-outline-light:hover {
+    background: #007bff;
+    color: #fff;
+    transform: scale(1.05); /* Efecto de aumento */
+}
+
+.footer .btn-lg-square {
+    width: 30px; /* Tamaño reducido del círculo */
+    height: 30px; /* Tamaño reducido del círculo */
+    border-radius: 50%;
+    background: #333; /* Fondo oscuro para los botones de redes sociales */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Asegura que la imagen no se salga del círculo */
+    transition: background 0.3s, transform 0.3s;
+    border: none; /* Elimina el borde predeterminado del botón si es necesario */
+}
+
+.footer .btn-lg-square {
+    width: 25px; /* Tamaño más pequeño del círculo */
+    height: 25px; /* Tamaño más pequeño del círculo */
+    border-radius: 50%;
+    background: #333; /* Fondo oscuro para los botones de redes sociales */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Asegura que la imagen no se salga del círculo */
+    transition: background 0.3s, transform 0.3s;
+    border: none; /* Elimina el borde predeterminado del botón si es necesario */
+}
+
+.footer .btn-lg-square img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir el círculo sin distorsionar */
+    display: block; /* Elimina el espacio blanco debajo de la imagen */
+}
+
+.footer .btn-lg-square:hover {
+    background: #007bff;
+    transform: scale(1.05); /* Efecto de aumento */
+}
+
+.footer .social_icons {
+    display: flex;
+    gap: 5px; /* Espacio reducido entre los botones */
+    justify-content: center; /* Centra los botones en la fila */
+    flex-wrap: nowrap; /* Evita el ajuste a una nueva línea */
+}
+
+
+
+.footer .input-group {
+    display: flex; /* Usa flexbox para alinear los elementos */
+    margin-top: 20px;
+}
+
+.footer .input-group .form-control {
+    border: 1px solid #444;
+    border-radius: 25px;
+    padding: 10px 15px;
+    flex: 1; /* Ocupa el espacio disponible */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.footer .input-group .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra al enfocarse */
+}
+
+.footer .input-group .btn-primary {
+    border-radius: 25px;
+    background: #007bff;
+    border: 1px solid #007bff;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin-left: 10px; /* Espacio entre el campo de texto y el botón */
+    transition: background 0.3s, border-color 0.3s;
+    white-space: nowrap; /* Evita que el botón se ajuste a la línea */
+}
+
+.footer .input-group .btn-primary:hover {
+    background: #0056b3;
+    border-color: #0056b3;
+}
+
+
+.footer .input-group .btn-primary:hover {
+    background: #0056b3;
+    border-color: #0056b3;
+}
+
+.footer .text-center {
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.footer .text-center p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.footer .text-center a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .text-center a:hover {
+    color: #0056b3;
+}
+
+.footer .text-center .text-muted {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+}

@@ -1,0 +1,144 @@
+
+
+{
+    "Usuarios": [
+      {
+        "Nombre": "Gian",
+        "Rol": "Paciente",
+        "Correo": "gigiluicort@gmail.com",
+        "Contraseña": "160703",
+        "Id": "1",
+        "Tipodocumento": "CC",
+        "Numerodocumento": "1000240511"
+      },
+      {
+        "Nombre": "narly",
+        "Rol": "Paciente",
+        "Correo": "nsanchezt@gmail.com",
+        "Contraseña": "12345",
+        "Id": "2",
+        "Tipodocumento": "CC",
+        "Numerodocumento": "1234567890"
+      },
+      {
+        "Nombre": "Santiago",
+        "Rol": "Paciente",
+        "Correo": "santi23@gmail.com",
+        "Contraseña": "12345678",
+        "Id": "3",
+        "Tipodocumento": "CC",
+        "Numerodocumento": "1122334455"
+      },
+      {
+        "Nombre": "Maria",
+        "Rol": "Paciente",
+        "Correo": "maria123@gmail.com",
+        "Contraseña": "abcdefg",
+        "Id": "4",
+        "Tipodocumento": "CC",
+        "Numerodocumento": "1027456987"
+      },
+      {
+        "Nombre": "Carlos",
+        "Rol": "Paciente",
+        "Correo": "carlos87@gmail.com",
+        "Contraseña": "987654321",
+        "Id": "5",
+        "Tipodocumento": "TI",
+        "Numerodocumento": "1023456789"
+      },
+      {
+        "Nombre": "Dr. jefer",
+        "Rol": "Medico",
+        "Correo": "jefer51@gmail.com",
+        "Contraseña": "indigo51",
+        "Id": "6",
+        "Tipodocumento": "CC",
+        "Numerodocumento": "1034567890",
+        "Especialidad": "Ginecologo"
+      },
+      {
+        "Nombre": "Dr. Juan",
+        "Rol": "Medico",
+        "Correo": "juanito@gmail.com",
+        "Contraseña": "med123",
+        "Id": "7",
+        "Tipodocumento": "CC",
+        "Numerodocumento": "1045678901",
+        "Especialidad": "Pediatría"
+      },
+      {
+        "Nombre": "Dra. Lucia",
+        "Rol": "Medico",
+        "Correo": "lucia.medico@gmail.com",
+        "Contraseña": "med789",
+        "Id": "8",
+        "Tipodocumento": "CC",
+        "Numerodocumento": "1056789012",
+        "Especialidad": "Ginecología"
+      },
+      {
+        "Nombre": "Dr. Juan",
+        "Rol": "Medico",
+        "Correo": "juan.medico@gmail.com",
+        "Contraseña": "med101",
+        "Id": "9",
+        "Tipodocumento": "CC",
+        "Numerodocumento": "1067890123",
+        "Especialidad": "Dermatología"
+      },
+      {
+        "Nombre": "Dra. Sofia",
+        "Rol": "Medico",
+        "Correo": "sofia.medico@gmail.com",
+        "Contraseña": "med102",
+        "Id": "10",
+        "Tipodocumento": "CC",
+        "Numerodocumento": "1078901234",
+        "Especialidad": "Oftalmología"
+      }
+    ],
+    "Citas": [
+      {
+        "Id": "1",
+        "Fecha": "2024-09-01",
+        "Hora": "09:00",
+        "Estado": "Confirmada",
+        "PacienteId": "1",
+        "MedicoId": "6"
+      },
+      {
+        "Id": "2",
+        "Fecha": "2024-09-02",
+        "Hora": "10:00",
+        "Estado": "Pendiente",
+        "PacienteId": "2",
+        "MedicoId": "7"
+      },
+      {
+        "Id": "3",
+        "Fecha": "2024-09-03",
+        "Hora": "11:00",
+        "Estado": "Cancelada",
+        "PacienteId": "3",
+        "MedicoId": "8"
+      },
+      {
+        "Id": "4",
+        "Fecha": "2024-09-04",
+        "Hora": "14:00",
+        "Estado": "Confirmada",
+        "PacienteId": "4",
+        "MedicoId": "9"
+      },
+      {
+        "Id": "5",
+        "Fecha": "2024-09-05",
+        "Hora": "15:00",
+        "Estado": "Pendiente",
+        "PacienteId": "5",
+        "MedicoId": "10"
+      }
+    ]
+  }
+  

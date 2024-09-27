@@ -1,0 +1,568 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background: linear-gradient(90deg, #f3f4f6 0%, #ffffff 100%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.brand-name {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    color: #555;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s;
+}
+
+.navbar-right a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.navbar-right a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar-right a:hover {
+    color: #031529;
+}
+
+
+
+/* Estilo general de la sección de bienvenida */
+
+  
+  /* Estilo del título */
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .center-text {
+    text-align: center;
+    
+}
+
+  /* Contenedor de botones */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  /* Estilo de los botones */
+  .btn {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #4a90e2, #357abd); /* Ajusta los colores de fondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Efecto de onda en los botones */
+  .btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 80%);
+    transition: transform 0.3s ease;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    z-index: 0;
+  }
+  
+  /* Efecto al pasar el ratón por encima */
+  .btn:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .btn:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #6c63ff, #3f51b5);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Efecto al hacer clic en el botón */
+  .btn:active {
+    transform: translateY(1px);
+    background: linear-gradient(135deg, #5a5af7, #2c387e);
+  }
+  
+  /* Estilo específico para cada botón */
+  .btn.contact {
+    background: linear-gradient(135deg, #f77f00, #d8336c);
+  }
+  
+  .btn.schedule {
+    background: linear-gradient(135deg, #00bfae, #00897b);
+  }
+  
+  .btn.history {
+    background: linear-gradient(135deg, #ff3d00, #c62828);
+  }
+  
+  
+  
+ /* Estilo para la sección de anuncios importantes */
+.announcements {
+    background: #f9f9f9;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 900px;
+  }
+  
+  .announcements h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  
+  .announcement-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .announcement-item {
+    display: flex;
+    align-items: flex-start;
+    background: linear-gradient(145deg, #ffffff, #f1f1f1);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .announcement-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .announcement-icon {
+    font-size: 2.5rem;
+    margin-right: 20px;
+    color: #3498db;
+  }
+  
+  .announcement-content {
+    flex: 1;
+  }
+  
+  .announcement-content h3 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .announcement-content p {
+    margin: 5px 0 0;
+    color: #7f8c8d;
+    font-size: 1rem;
+  }
+  
+  /* Agregar animación para mejorar la interactividad */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .announcement-item {
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  
+  /* Responsividad para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr); /* Cambia a 2 columnas en pantallas pequeñas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Cambia a 1 columna en pantallas muy pequeñas */
+    }
+  }
+  
+  
+
+.news-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.news-section h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.news-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.news-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+}
+
+.news-card h3 {
+    margin: 1rem;
+    color: #007bff;
+}
+
+.news-card p {
+    margin: 0 1rem 1rem;
+    color: #555;
+}
+
+
+
+.news-card .read-more:hover {
+    background-color: #24b300;
+}
+
+.news-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+ 
+  /* styles.css */
+/* src/components/FAQSection.css */
+.faq-section {
+    padding: 2rem;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.faq-section h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 1.5rem;
+    background-color: #fff;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item.open {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.faq-question {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    text-align: left;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question:hover {
+    background-color: #0056b3;
+}
+
+.faq-question::after {
+    content: '+';
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.open .faq-question::after {
+    transform: rotate(45deg); /* Cambia el '+' a una 'x' al abrir */
+}
+
+.faq-answer {
+    padding: 1rem;
+    background-color: #f9f9f9;
+     /* Por defecto la respuesta está oculta */
+    animation: fadeIn 0.3s ease;
+}
+
+.faq-item.open .faq-answer {
+    display: block; /* Mostrar la respuesta si está abierta */
+}
+
+.faq-answer p {
+    margin: 0;
+    color: #555;
+}
+
+/* Animación suave al mostrar la respuesta */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.footer {
+    background: #1a1a1a; /* Fondo oscuro */
+    color: #fff;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Línea superior sutil */
+}
+
+.footer .footer-section {
+    flex: 1;
+    margin: 0 20px;
+    min-width: 250px; /* Ancho mínimo para las secciones */
+}
+
+.footer h4 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #007bff; /* Línea inferior destacada */
+}
+
+.footer h6 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    margin: 0 0 10px;
+}
+
+.footer p i {
+    margin-right: 10px;
+}
+
+.footer .btn-outline-light {
+    border: 1px solid #007bff;
+    color: #007bff;
+    font-size: 16px;
+    padding: 8px 16px;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+}
+
+.footer .btn-outline-light:hover {
+    background: #007bff;
+    color: #fff;
+    transform: scale(1.05); /* Efecto de aumento */
+}
+
+.footer .btn-lg-square {
+    width: 30px; /* Tamaño reducido del círculo */
+    height: 30px; /* Tamaño reducido del círculo */
+    border-radius: 50%;
+    background: #333; /* Fondo oscuro para los botones de redes sociales */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Asegura que la imagen no se salga del círculo */
+    transition: background 0.3s, transform 0.3s;
+    border: none; /* Elimina el borde predeterminado del botón si es necesario */
+}
+
+.footer .btn-lg-square {
+    width: 25px; /* Tamaño más pequeño del círculo */
+    height: 25px; /* Tamaño más pequeño del círculo */
+    border-radius: 50%;
+    background: #333; /* Fondo oscuro para los botones de redes sociales */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Asegura que la imagen no se salga del círculo */
+    transition: background 0.3s, transform 0.3s;
+    border: none; /* Elimina el borde predeterminado del botón si es necesario */
+}
+
+.footer .btn-lg-square img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir el círculo sin distorsionar */
+    display: block; /* Elimina el espacio blanco debajo de la imagen */
+}
+
+.footer .btn-lg-square:hover {
+    background: #007bff;
+    transform: scale(1.05); /* Efecto de aumento */
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 5px; /* Espacio reducido entre los botones */
+    justify-content: center; /* Centra los botones en la fila */
+    flex-wrap: nowrap; /* Evita el ajuste a una nueva línea */
+}
+
+
+
+.footer .input-group {
+    display: flex; /* Usa flexbox para alinear los elementos */
+    margin-top: 20px;
+}
+
+.footer .input-group .form-control {
+    border: 1px solid #444;
+    border-radius: 25px;
+    padding: 10px 15px;
+    flex: 1; /* Ocupa el espacio disponible */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.footer .input-group .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra al enfocarse */
+}
+
+.footer .input-group .btn-primary {
+    border-radius: 25px;
+    background: #007bff;
+    border: 1px solid #007bff;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin-left: 10px; /* Espacio entre el campo de texto y el botón */
+    transition: background 0.3s, border-color 0.3s;
+    white-space: nowrap; /* Evita que el botón se ajuste a la línea */
+}
+
+.footer .input-group .btn-primary:hover {
+    background: #0056b3;
+    border-color: #0056b3;
+}
+
+
+.footer .input-group .btn-primary:hover {
+    background: #0056b3;
+    border-color: #0056b3;
+}
+
+.footer .text-center {
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.footer .text-center p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.footer .text-center a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .text-center a:hover {
+    color: #0056b3;
+}
+
+.footer .text-center .text-muted {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+}
+

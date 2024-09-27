@@ -1,0 +1,112 @@
+/* Estilo general para el contenedor del login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .login-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .login-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  .login-box h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  
+  .textbox {
+    margin-bottom: 1.5rem;
+    position: relative;
+    text-align: left;
+  }
+  
+  .textbox label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #666;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .textbox input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .textbox input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  .btn-login {
+    background: #007bff;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .btn-login:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  .btn-register, .btn-recover {
+    background: #28a745;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 48%;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 0.5rem;
+  }
+  
+  .btn-register:hover, .btn-recover:hover {
+    background: #218838;
+    transform: translateY(-2px);
+  }
+  
+  .error-message {
+    color: #ff4d4d;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+  }
+  
+  .links {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  

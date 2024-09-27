@@ -1,0 +1,482 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background: linear-gradient(90deg, #f3f4f6 0%, #ffffff 100%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.brand-name {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    color: #555;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s;
+}
+
+.navbar-right a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.navbar-right a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar-right a:hover {
+    color: #031529;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(45deg, #007bff, #adafb1);
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid transparent;
+}
+
+.login-button:hover {
+    background: linear-gradient(45deg, #0056b3, #003d7a);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.login-icon {
+    height: 24px;
+    margin-right: 10px;
+}
+
+
+
+/* Sección de presentación */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 5rem;
+    background-color: #0275d8;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: #ffdd57;
+    color: #333;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #f0ad4e;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* Sección de servicios */
+.services-section {
+    padding: 3rem 5rem;
+    background-color: #f8f9fa;
+}
+
+.services-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.service-card {
+    background-color: #3a62e9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Sección de médicos */
+.doctors-section {
+    padding: 3rem 5rem;
+    background-color: #fff;
+}
+
+.doctors-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.doctors-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.doctor-card {
+    background-color: #3a62e9;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.doctor-card:hover {
+    transform: translateY(-10px);
+}
+
+.doctor-card img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* Sección de testimonios */
+.testimonials-section {
+    padding: 3rem 5rem;
+    background-color: #f8f9fa;
+}
+
+.testimonials-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.testimonial-card {
+    background-color: #3a62e9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+/* Sección de contacto */
+.contact-section {
+    padding: 3rem 5rem;
+    background-color: #0275d8;
+    color: #fff;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.contact-info h3 {
+    margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: #ffdd57;
+    color: #333;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #f0ad4e;
+}
+
+/* Pie de página */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer {
+    background: #1a1a1a; /* Fondo oscuro */
+    color: #fff;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Línea superior sutil */
+}
+
+.footer .footer-section {
+    flex: 1;
+    margin: 0 20px;
+    min-width: 250px; /* Ancho mínimo para las secciones */
+}
+
+.footer h4 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #007bff; /* Línea inferior destacada */
+}
+
+.footer h6 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    margin: 0 0 10px;
+}
+
+.footer p i {
+    margin-right: 10px;
+}
+
+.footer .btn-outline-light {
+    border: 1px solid #007bff;
+    color: #007bff;
+    font-size: 16px;
+    padding: 8px 16px;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+}
+
+.footer .btn-outline-light:hover {
+    background: #007bff;
+    color: #fff;
+    transform: scale(1.05); /* Efecto de aumento */
+}
+
+.footer .btn-lg-square {
+    width: 30px; /* Tamaño reducido del círculo */
+    height: 30px; /* Tamaño reducido del círculo */
+    border-radius: 50%;
+    background: #333; /* Fondo oscuro para los botones de redes sociales */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Asegura que la imagen no se salga del círculo */
+    transition: background 0.3s, transform 0.3s;
+    border: none; /* Elimina el borde predeterminado del botón si es necesario */
+}
+
+.footer .btn-lg-square {
+    width: 25px; /* Tamaño más pequeño del círculo */
+    height: 25px; /* Tamaño más pequeño del círculo */
+    border-radius: 50%;
+    background: #333; /* Fondo oscuro para los botones de redes sociales */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Asegura que la imagen no se salga del círculo */
+    transition: background 0.3s, transform 0.3s;
+    border: none; /* Elimina el borde predeterminado del botón si es necesario */
+}
+
+.footer .btn-lg-square img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir el círculo sin distorsionar */
+    display: block; /* Elimina el espacio blanco debajo de la imagen */
+}
+
+.footer .btn-lg-square:hover {
+    background: #007bff;
+    transform: scale(1.05); /* Efecto de aumento */
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 5px; /* Espacio reducido entre los botones */
+    justify-content: center; /* Centra los botones en la fila */
+    flex-wrap: nowrap; /* Evita el ajuste a una nueva línea */
+}
+
+
+
+.footer .input-group {
+    display: flex; /* Usa flexbox para alinear los elementos */
+    margin-top: 20px;
+}
+
+.footer .input-group .form-control {
+    border: 1px solid #444;
+    border-radius: 25px;
+    padding: 10px 15px;
+    flex: 1; /* Ocupa el espacio disponible */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.footer .input-group .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra al enfocarse */
+}
+
+.footer .input-group .btn-primary {
+    border-radius: 25px;
+    background: #007bff;
+    border: 1px solid #007bff;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin-left: 10px; /* Espacio entre el campo de texto y el botón */
+    transition: background 0.3s, border-color 0.3s;
+    white-space: nowrap; /* Evita que el botón se ajuste a la línea */
+}
+
+.footer .input-group .btn-primary:hover {
+    background: #0056b3;
+    border-color: #0056b3;
+}
+
+
+.footer .input-group .btn-primary:hover {
+    background: #0056b3;
+    border-color: #0056b3;
+}
+
+.footer .text-center {
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.footer .text-center p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.footer .text-center a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .text-center a:hover {
+    color: #0056b3;
+}
+
+.footer .text-center .text-muted {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+}
